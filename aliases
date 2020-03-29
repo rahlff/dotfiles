@@ -1,3 +1,6 @@
 
 alias v=nvim
 alias vim=nvim
+function cs () {
+	cd "$@" && ls -al
+}

@@ -9,7 +9,10 @@ set scrolloff=8
 let mapleader = ','
 
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
-
+nnoremap <c-j> <c-w>j
+nnoremap <c-h> <c-w>h
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 set autoindent
 
 set smartindent
@@ -64,7 +67,7 @@ inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
-" NOTES
+" NOTES / Tips and tricks
 
 " "+p -> paste from clipboard
 
@@ -73,3 +76,10 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 " m + [AZ] -> create non file located mark
 
 " '<MARK> go to mark
+"
+" ctrl {a,x} increment og decrement the first number after the cursor.
+" 
+" q: opens a buffer with previuos commands, type enter to run a command.
+" Commands can be editted before they are envoked.
+"
+" When in visual mode o move the cursor to the other end of the blok.
