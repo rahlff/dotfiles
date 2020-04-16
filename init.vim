@@ -83,3 +83,7 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 " Commands can be editted before they are envoked.
 "
 " When in visual mode o move the cursor to the other end of the blok.
+"
+" Diff
+" do - Optain change other file
+" dp - 
