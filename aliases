@@ -1,6 +1,10 @@
-
 alias v=nvim
 alias vim=nvim
+
+function cg {
+	grep -rnw --include=\*.{c,cpp,h,hpp} -e "$1"
+}
+
 function cs () {
 	cd "$@" && ls -al
 }
