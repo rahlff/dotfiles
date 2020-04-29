@@ -1,5 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Neovim configuration
+"
+" + Random notes in bottom of file
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set path=**
@@ -108,7 +110,8 @@ set fillchars+=vert:\
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set mouse=nicr
 
-
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NOTES / Tips and tricks
@@ -146,3 +149,17 @@ set mouse=nicr
 " Diff
 " do - Optain change other file
 " dp - 
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" when use f or t for search, hit ; to search one more forward or , to go back
+"
+" gi to jump to your last insert location
+" ctrl + ^ to switch back and forth between your current last file
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vi( = visual inside parenthesis
+" va( = visual around parenthesis
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" b is a bracket object.
+" ex. cib or dib or cab or dab
