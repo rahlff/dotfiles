@@ -163,3 +163,10 @@ vnoremap K :m '<-2<CR>gv=gv
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " b is a bracket object.
 " ex. cib or dib or cab or dab
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Split window management
+" ctrl w + =   sets all splits to equal size
+" ctrl w + |  maximize the split horisontal
+" ctrl w + _  maximize the split vertical 
+" ctrl w + c  close window
