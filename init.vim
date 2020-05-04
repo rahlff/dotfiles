@@ -24,6 +24,15 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Easy make remap
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>ma :make<CR>
+
+nnoremap <leader>cw :cw<CR>
+nnoremap <leader>cn :cn<CR>
+nnoremap <leader>cp :cp<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set autoindent
@@ -75,7 +84,7 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vimagit
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:magit_default_fold_level = 0
+"let g:magit_default_fold_level = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme
@@ -110,8 +119,12 @@ set fillchars+=vert:\
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set mouse=nicr
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Move code blocks ups and down
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NOTES / Tips and tricks
@@ -170,3 +183,14 @@ vnoremap K :m '<-2<CR>gv=gv
 " ctrl w + |  maximize the split horisontal
 " ctrl w + _  maximize the split vertical 
 " ctrl w + c  close window
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Quick fix window
+"
+" :cw[indow] opens the quick fix window where it is possible to jump between
+" compiler errors after running :make
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set make program
+" "set makeprg=make\ -j4\ -f\ <PATH_TO_MAKEFILE>
+" sets the make command to be run when running :make
