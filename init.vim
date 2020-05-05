@@ -6,6 +6,7 @@
 
 set path=**
 set wildmenu
+"set wildignore+=*.min.js,*.min.css,*/node_modules/*,*/dist/*
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Start scrolling when we're X lines away from margins
@@ -124,6 +125,12 @@ set mouse=nicr
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
+set ignorecase smartcase
+
+set list listchars=tab:»\ ,trail:\␣,eol:↩
+
+set backspace=indent,eol,start
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
