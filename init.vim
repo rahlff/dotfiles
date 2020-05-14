@@ -90,7 +90,8 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-colorscheme desert
+colorscheme delek
+hi Search     ctermfg=White	   ctermbg=Red guibg=Red guifg=White
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline Theme
