@@ -1,5 +1,6 @@
 alias v=nvim
 alias vim=nvim
+alias yt=python3 $(which youtube-dl)
 
 function cg {
 	grep -rnw --include=\*.{c,cpp,h,hpp} -e "$1"
