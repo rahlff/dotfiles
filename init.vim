@@ -8,6 +8,8 @@ set path=**
 set wildmenu
 "set wildignore+=*.min.js,*.min.css,*/node_modules/*,*/dist/*
 
+syntax enable
+filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Start scrolling when we're X lines away from margins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -98,6 +100,9 @@ Plug 'OmniSharp/omnisharp-vim'
 
 " Colorshemes
 Plug 'ghifarit53/tokyonight-vim'
+
+" Rust
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
